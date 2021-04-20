@@ -1,2 +1,1 @@
-console.log(3);
-console.log(3333);
+console.log(3)
