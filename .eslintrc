@@ -1,0 +1,15 @@
+{
+    "root": true,
+    "plugins": [
+        "security",
+        "sonarjs"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "extends": [
+        "plugin:security/recommended",
+        "plugin:sonarjs/recommended",
+        "plugin:vue/recommended"
+    ]
+}
