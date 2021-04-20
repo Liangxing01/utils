@@ -10,11 +10,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+        "pre-commit": "npm run lint",
+        "commit-msg": "echo 11111"
+    }
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-sonarjs": "^0.6.0",
-    "eslint-plugin-vue": "^7.9.0"
+    "eslint-plugin-vue": "^7.9.0",
+    "husky": "^6.0.0"
   }
 }
