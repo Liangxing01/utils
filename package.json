@@ -1,19 +1,20 @@
 {
   "name": "eslint-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src/*"
+    "lint": "eslint ./src/*",
+    "release": "node scripts/release.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "husky": {
     "hooks": {
-        "pre-commit": "lint-staged",
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-sonarjs": "^0.6.0",
     "eslint-plugin-vue": "^7.9.0",
+    "execa": "^5.0.0",
     "husky": "^6.0.0"
   }
 }
